@@ -15,6 +15,7 @@ This is the frontend application for the Contact Management system. It allows us
 - React
 - React Router
 - CSS
+- Tailwindcss
 
 ## Getting Started
 
