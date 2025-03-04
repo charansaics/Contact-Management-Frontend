@@ -58,9 +58,10 @@ const Home = () => {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+                    "x-refresh-token": reffeToken
                 },
                 body: JSON.stringify({
-                    refreshToken: localStorage.getItem("refreshToken"), // Send in body
+                    refreshToken:reffeToken, // Send in body
                 }),
             });
 
