@@ -22,7 +22,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
-                <Route path="/edit" element={<ProtectedRoute><EditContact /></ProtectedRoute>} />
+                <Route path="/edit/:id" element={<ProtectedRoute><EditContact /></ProtectedRoute>} />
                 <Route path="/add" element={<ProtectedRoute><AddContactac /></ProtectedRoute>} />
                 <Route path="/register" element={<RegistrationPage />} />
             </Routes>

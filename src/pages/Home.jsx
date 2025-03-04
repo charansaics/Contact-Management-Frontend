@@ -103,6 +103,7 @@ const Home = () => {
                         contacts.map((contact) => (
                             <Card
                                 key={contact._id}
+                                id={contact._id}
                                 name={contact.name}
                                 email={contact.email}
                                 phone={contact.phone}
