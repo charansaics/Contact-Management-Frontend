@@ -54,7 +54,7 @@ const LandingPage = () => {
                         <h1 className="text-gray-800 font-bold text-2xl mb-1 lg:hidden">Contact Book</h1>
                         <p className="text-sm font-normal text-gray-600 mb-8 lg:hidden">Welcomes You !</p>
                         <div className="flex items-center border-2 mb-8 py-2 px-3 rounded-2xl">
-                            <input id="email" className="pl-2 w-full outline-none border-none" type="email" name="email" placeholder="Email Address" required />
+                            <input  id="email" className="pl-2 w-full outline-none border-none bg-beige-500" type="email" name="email" placeholder="Email Address" required />
                         </div>
                         <div className="flex items-center border-2 mb-12 py-2 px-3 rounded-2xl">
                             <input className="pl-2 w-full outline-none border-none" type="password" name="password" id="password" placeholder="Password" required />
@@ -64,7 +64,7 @@ const LandingPage = () => {
                         </button>
                         <div className="flex justify-center mt-4">
                             <Link to="/register" className="text-sm ml-2 hover:text-blue-500 cursor-pointer hover:-translate-y-1 duration-500 transition-all">
-                                Don't have an account yet?
+                                Don't have an account? <br></br>👆
                             </Link>
                         </div>
                     </form>
