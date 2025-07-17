@@ -3,7 +3,7 @@ import Card from "./components/contactCard";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-    const baseurl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api"; 
+    const baseurl = import.meta.env.VITE_API_BASE_URL + "/api" ; 
     const [contacts, setContacts] = useState([]);
     const navigate = useNavigate();
 

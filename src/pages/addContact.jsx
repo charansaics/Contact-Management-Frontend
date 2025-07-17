@@ -16,7 +16,7 @@ export default function AddContactac() {
         try {
             const accessToken = localStorage.getItem("accessToken");
             const refreshToken = localStorage.getItem("refreshToken");
-            const baseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+            const baseUrl = import.meta.env.VITE_API_BASE_URL + "/api"
 
             const response = await fetch(`${baseUrl}/contacts`, {
                 method: "POST",
