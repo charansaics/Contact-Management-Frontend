@@ -12,7 +12,7 @@ export default function Card({ id, name, email, phone }) {
     const handleDelete = async () => {
         const accessToken = localStorage.getItem("accessToken");
         const refreshToken = localStorage.getItem("refreshToken");
-        const baseUrl = import.meta.env.VITE_API_BASE_URL  + "/api";
+        const baseUrl = import.meta.env.VITE_API_BASE_URL + "/api";
 
         try {
             const response = await fetch(`${baseUrl}/contacts/${id}`, {
