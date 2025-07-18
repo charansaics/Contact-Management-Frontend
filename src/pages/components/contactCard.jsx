@@ -24,9 +24,10 @@ export default function Card({ id, name, email, phone }) {
             });
             const data = await response.json();
             console.log("Delete response:", data);
-            navigate("/home", { replace: true });
             getAllContacts(); // Refresh the contact list after deletion
             console.log("Contact deleted successfully");
+            navigate("/home", { replace: true });
+            
 
             // Optionally, refresh the contact list or navigate to another page
         } catch (error) {
