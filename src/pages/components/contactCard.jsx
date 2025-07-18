@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import {getAllContacts} from "../api/contacts"; // Assuming you have an API utility for fetching contacts
 
 
 export default function Card({ id, name, email, phone }) {
@@ -24,7 +23,7 @@ export default function Card({ id, name, email, phone }) {
             });
             const data = await response.json();
             console.log("Delete response:", data);
-            getAllContacts(); // Refresh the contact list after deletion
+             // Refresh the contact list after deletion
             console.log("Contact deleted successfully");
             navigate("/home", { replace: true });
             

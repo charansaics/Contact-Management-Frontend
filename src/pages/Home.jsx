@@ -33,7 +33,7 @@ const Home = () => {
 
     useEffect(() => {
         getAllContacts();
-    }, []);
+    });
 
     const handleCreateContact = () => {
         const accessToken = localStorage.getItem("accessToken"); 
