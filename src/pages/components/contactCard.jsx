@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import {getAllgetAllContactsAfterdelete} from "../utils/getAllcontacts";
+import {getAllContactsAfterdelete} from "../utils/getAllContacts";
 
 
 export default function Card({ id, name, email, phone }) {
@@ -26,7 +26,7 @@ export default function Card({ id, name, email, phone }) {
             console.log("Delete response:", data);
              // Refresh the contact list after deletion
             console.log("Contact deleted successfully");
-            await getAllgetAllContactsAfterdelete();
+            await getAllContactsAfterdelete();
             navigate("/home", { replace: true });
             
 
