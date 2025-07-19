@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import {getAllContactsAfterdelete} from "../../utils/getAllcontacts.js";
+import {getAllContactsAfterdelete} from "./getAllContacts.js";
 
 
 export default function Card({ id, name, email, phone }) {
