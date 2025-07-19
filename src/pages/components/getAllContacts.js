@@ -24,4 +24,4 @@ const getAllContactsAfterdelete = async () => {
         }
     };
 
-export default getAllContactsAfterdelete;
+export  {getAllContactsAfterdelete};
