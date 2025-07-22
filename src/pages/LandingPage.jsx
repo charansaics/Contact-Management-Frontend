@@ -37,6 +37,8 @@ const LandingPage = () => {
             localStorage.setItem("accessToken", data.accessToken);
             localStorage.setItem("refreshToken", data.refreshToken);
             navigate("/home", { state: { accessToken: data.accessToken, refreshToken: data.refreshToken } });
+        }else {
+            alert("Login failed. Please check your credentials.");
         }
     };
 
